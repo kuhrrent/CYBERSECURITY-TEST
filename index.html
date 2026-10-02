@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybersecurity Awareness Month</title>
+    <style>
+        :root {
+            --primary: #0f172a;
+            --accent: #f97316;
+            --error: #dc2626;
+            --bg: #f8fafc;
+            --card-bg: #ffffff;
+            --text: #1e293b;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .main-container {
+            background: var(--card-bg);
+            width: 90%;
+            max-width: 550px;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px -10px rgba(0,0,0,0.1);
+            text-align: center;
+            border-top: 6px solid var(--accent);
+        }
+
+        .icon-container {
+            background-color: #ffedd5;
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 20px;
+        }
+
+        .icon {
+            font-size: 35px;
+        }
+
+        .oops-text {
+            color: var(--error);
+            font-size: 26px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+            display: block;
+        }
+
+        h1 {
+            font-size: 20px;
+            color: var(--primary);
+            margin-top: 0;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .description {
+            font-size: 15px;
+            color: #475569;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+
+        .rules-box {
+            background-color: #f1f5f9;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 30px;
+            text-align: left;
+        }
+
+        .rules-title {
+            font-weight: 700;
+            font-size: 13px;
+            color: #64748b;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .rule-item {
+            font-size: 14px;
+            line-height: 1.5;
+            color: #334155;
+            margin-bottom: 12px;
+            display: flex;
+            gap: 10px;
+        }
+
+        .rule-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .rule-num {
+            font-weight: 700;
+            color: var(--accent);
+        }
+
+        .btn {
+            background-color: var(--primary);
+            color: white;
+            border: none;
+            padding: 14px 28px;
+            font-size: 15px;
+            font-weight: 600;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.2s ease;
+            text-decoration: none;
+            display: inline-block;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .btn:hover {
+            background-color: #334155;
+        }
+
+        .footer-text {
+            font-size: 12px;
+            color: #94a3b8;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="main-container">
+        <div class="icon-container">
+            <div class="icon">🎣</div>
+        </div>
+        
+        <span class="oops-text">Oops, huli ka!</span>
+        <h1>You clicked on a test link.</h1>
+        <p class="description">Please refrain from clicking links carelessly! This activity is part of our Cybersecurity Awareness Month initiative to measure our team's alertness against potential threats.</p>
+        
+        <div class="rules-box">
+            <div class="rules-title">Remember these 3 rules to stay safe online:</div>
+            <div class="rule-item">
+                <span class="rule-num">01</span>
+                <span>Always stop, look, and think before clicking any link.</span>
+            </div>
+            <div class="rule-item">
+                <span class="rule-num">02</span>
+                <span>Check for red flags such as suspicious sender domains and generic greetings.</span>
+            </div>
+            <div class="rule-item">
+                <span class="rule-num">03</span>
+                <span>Verify suspicious emails with the ICT Department first.</span>
+            </div>
+        </div>
+
+        <button class="btn" onclick="alert('Got it! Always be mindful when clicking links online.')">I Understand</button>
+
+        <div class="footer-text">Cybersecurity Awareness Month Simulation</div>
+    </div>
+
+</body>
+</html>
